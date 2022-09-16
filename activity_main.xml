@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"
+            android:gravity="center"
+            android:text="스트레칭이 보약이다"
+            android:textColor="#00c900"
+            android:textSize="17sp" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:format12Hour="M/dd E\nHH:mm:ss"
+            android:format24Hour="M/dd E\nHH:mm:ss"
+            android:textSize="25sp"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="10sp"
+            android:text="DATE"
+            android:textColor="#00c900"
+            />
+
+    </FrameLayout>
+</androidx.wear.widget.BoxInsetLayout>
